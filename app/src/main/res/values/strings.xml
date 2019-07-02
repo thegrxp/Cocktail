@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cocktail</string>
+
+    <string name="title_home">Home</string>
+    <string name="transition_name">transition_name</string>
+    <string name="transition_category">transition_category</string>
+    <string name="streams_title">STREAMS</string>
+    <string name="live_title">CURRENTLY AIRING</string>
+    <string name="stream_content">Dirty Martini, Gibson, Gimlet, Gin Fizz, Gin and Tonic, Lime Rickey,
+        Bahama Mama, Cuba Libre, Mai Tai, Juan Collins, Tequila Sunset.</string>
+    <string name="media_route_menu_title">Cast</string>
+    <string name="toast_cast_unavailable">Oh no, casting is unavailable.</string>
+    <string name="app_id">CocktailCast</string>
+</resources>

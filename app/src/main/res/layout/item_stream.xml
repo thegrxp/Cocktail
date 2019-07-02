@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="item"
+                type="com.ainrom.cocktail.data.Stream"/>
+
+        <variable
+                name="viewModel"
+                type="com.ainrom.cocktail.view.streams.StreamsViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="16dp"
+            android:onClick="@{() -> viewModel.openStream(item)}">
+
+        <ImageView
+                android:id="@+id/iv_stream_category"
+                android:layout_width="90dp"
+                android:layout_height="125dp"
+                app:image="@{item.imageUri}"
+                android:background="@color/colorPlaceholder"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/tv_stream_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@{item.name}"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/iv_stream_category"
+                app:layout_constraintStart_toStartOf="@id/iv_stream_category"
+                app:layout_constraintEnd_toEndOf="@id/iv_stream_category"
+                tools:text="Hello"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
