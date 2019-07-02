@@ -26,8 +26,6 @@ class PlayerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setScreenParams()
-
         Injector.get().inject(this)
 
         streamsViewModel = ViewModelProviders.of(
